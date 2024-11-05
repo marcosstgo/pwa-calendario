@@ -1,0 +1,12 @@
+{
+    "name": "MC",
+    "version": "1.0.0",
+    "description": "Una aplicación web progresiva de ejemplo",
+    "main": "index.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "author": "Tu Nombre",
+    "license": "MIT"
+  }
+  

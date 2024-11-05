@@ -1,39 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calendario PWA</title>
+  <title>Mi PWA</title>
+  <link rel="stylesheet" href="/assets/styles.css">
   <link rel="manifest" href="/manifest.json">
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-    }
-    iframe {
-      width: 90%;
-      max-width: 800px;
-      height: 600px;
-      border: 0;
-    }
-  </style>
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Mi PWA">
 </head>
 <body>
-  <iframe src="https://calendar.google.com/calendar/embed?src=a13ddfcc60b2305f2dba7825ea810c2230bac2d7183534b8f6960ec4f30b83d9%40group.calendar.google.com&amp;ctz=America%2FPuerto_Rico" frameborder="0" scrolling="no"></iframe>
-  
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-          console.log('Service Worker registrado con éxito:', registration);
-        }).catch(function(error) {
-          console.log('Error en el registro del Service Worker:', error);
-        });
-      });
-    }
-  </script>
+  <h1>Bienvenido a Mi PWA</h1>
+  <script src="/assets/script.js"></script>
 </body>
 </html>
